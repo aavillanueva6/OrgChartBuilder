@@ -1,0 +1,19 @@
+{
+  "name": "org-chart-builder",
+  "version": "1.0.0",
+  "description": "Build a team org chart on command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aavillanueva6/OrgChartBuilder.git"
+  },
+  "author": "Alejandro Villanueva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aavillanueva6/OrgChartBuilder/issues"
+  },
+  "homepage": "https://github.com/aavillanueva6/OrgChartBuilder#readme"
+}
