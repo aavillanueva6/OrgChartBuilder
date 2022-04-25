@@ -54,4 +54,17 @@ describe('Manager', () => {
       expect(result).toEqual(expected);
     });
   });
+
+  describe('getOfficeNum', () => {
+    it('should return the office number of the employee that it is called on', () => {
+      const expected = 'testOfficeNum';
+      const result = new Manager(
+        'testName',
+        'testId',
+        'testEmail',
+        'testOfficeNum'
+      ).getOfficeNum();
+      expect(result).toEqual(expected);
+    });
+  });
 });
