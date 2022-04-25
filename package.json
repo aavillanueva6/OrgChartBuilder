@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/aavillanueva6/OrgChartBuilder/issues"
   },
-  "homepage": "https://github.com/aavillanueva6/OrgChartBuilder#readme"
+  "homepage": "https://github.com/aavillanueva6/OrgChartBuilder#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "jest": "^27.5.1"
+  }
 }

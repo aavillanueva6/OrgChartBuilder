@@ -57,7 +57,7 @@ describe('Employee', () => {
 
   describe('getSchool', () => {
     it('should return the school of the employee that it is called on', () => {
-      const expected = 'testEmail';
+      const expected = 'testSchool';
       const result = new Intern(
         'testName',
         'testId',
