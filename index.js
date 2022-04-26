@@ -149,7 +149,28 @@ function createIntern() {
 }
 
 function buildHTML(orgArray) {
-  console.log(orgArray);
+  const buildEngineerCard = require('./src/engineerCardTemplate');
+  const buildManagerCard = require('./src/managerCardTemplate');
+  const buildInternCard = require('./src/internCardTemplate');
+  const htmlSkeleton = require('./src/htmlSkeleton');
+  let htmlString = '';
+  htmlString += htmlSkeleton.topHtml();
+  orgArray.forEach((element) => {
+    const empRole = element.getRole();
+    let empCard = '';
+    if (empRole === 'Manager') {
+      empCard = buildManagerCard(element);
+    } else if (empRole === 'Engineer') {
+      empCard = buildEngineerCard(element);
+    } else if (empRole === 'Intern') {
+      empCard = buildInternCard(element);
+    } else {
+      console.error(error);
+    }
+    htmlString += empCard;
+  });
+  htmlString += htmlSkeleton.bottomHtml();
+  console.log(htmlString);
 }
 
 // call the createManager function
