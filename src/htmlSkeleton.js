@@ -26,7 +26,6 @@ function topHtml() {
         <h1>My Team</h1>
       </div>
     </header>
-
     <!-- Team Cards -->
     <div class="container mt-3">
       <div class="row d-flex justify-content-center">
@@ -34,8 +33,7 @@ function topHtml() {
 }
 
 function bottomHtml() {
-  return ` 
-      </div>
+  return `      </div>
     </div>
     <!-- Third party JS files linked here -->
     <script

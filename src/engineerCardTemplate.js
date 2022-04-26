@@ -1,6 +1,5 @@
 function buildEngineerCard(engObj) {
-  return `
-        <div class="col-sm-4 my-2">
+  return `        <div class="col-sm-4 my-2">
           <div class="card">
             <div class="card-header bg-primary text-white">
               <h5 class="card-title">${engObj.getName()}</h5>
