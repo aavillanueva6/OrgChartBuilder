@@ -33,13 +33,19 @@ function createManager() {
         message: `What is your office number?`,
         name: 'empOffice',
       },
+      {
+        type: 'input',
+        message: `What is your department name?`,
+        name: 'department',
+      },
     ])
     .then(function (response) {
       const newMan = new Manager(
         response.empName,
         response.empId,
         response.empEmail,
-        response.empOffice
+        response.empOffice,
+        response.department
       );
       orgArray.push(newMan);
       promptAddAnother();
@@ -170,7 +176,18 @@ function buildHTML(orgArray) {
     htmlString += empCard;
   });
   htmlString += htmlSkeleton.bottomHtml();
-  console.log(htmlString);
+  writeToFile(orgArray[0].department, htmlString);
+}
+
+function writeToFile(department, htmlString) {
+  const fs = require('fs');
+  fs.writeFile(
+    `./dist/${department}_Org_Chart.html`,
+    htmlString,
+    function (err) {
+      err ? console.error(err) : console.log('Success!');
+    }
+  );
 }
 
 // call the createManager function
