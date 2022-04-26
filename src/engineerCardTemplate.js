@@ -1,3 +1,8 @@
+/**
+ * function builds the card for the engineer object that it was called on.  Uses the object's methods to get the specific info for the employee
+ * @param {Object} engObj Engineer object passed in from the orgArray
+ * @returns string  HTML string for the card
+ */
 function buildEngineerCard(engObj) {
   return `        <div class="col-sm-4 my-2">
           <div class="card">

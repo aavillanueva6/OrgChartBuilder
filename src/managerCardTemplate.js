@@ -1,3 +1,8 @@
+/**
+ * function builds the card for the manager object that it was called on.  Uses the object's methods to get the specific info for the employee
+ * @param {Object} manObj Manager object passed in from the orgArray
+ * @returns string  HTML string for the card
+ */
 function buildManagerCard(manObj) {
   return `        <div class="col-sm-4 my-2">
           <div class="card">

@@ -1,3 +1,7 @@
+/**
+ * function to return the top portion of the html string to the build function
+ * @returns string  HTML string for the top portion of the html document
+ */
 function topHtml() {
   return `<!DOCTYPE html>
 <html lang="en">
@@ -6,7 +10,7 @@ function topHtml() {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organizational Chart</title>
-    <!-- Third party CSS/JS files linked here -->
+    <!-- ▼▼ Third party CSS/JS files linked here ▼▼ -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,7 +21,7 @@ function topHtml() {
       src="https://kit.fontawesome.com/1f888969c5.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Third party CSS/JS files linked here -->
+    <!-- ▲▲ Third party CSS/JS files linked here ▲▲ -->
   </head>
   <body>
     <!-- "My Team" Header section -->
@@ -32,16 +36,20 @@ function topHtml() {
 `;
 }
 
+/**
+ * function to return the bottom portion of the html string to the build function
+ * @returns string  HTML string for the bottom portion of the html document
+ */
 function bottomHtml() {
   return `      </div>
     </div>
-    <!-- Third party JS files linked here -->
+    <!-- ▼▼ Third party JS files linked here ▼▼ -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <!-- Third party JS files linked here -->
+    <!-- ▲▲ Third party JS files linked here ▲▲ -->
   </body>
 </html>`;
 }
