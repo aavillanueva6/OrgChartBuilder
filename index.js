@@ -3,6 +3,8 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const fs = require('fs');
+const path = require('path');
 
 // define global variable
 let orgArray = [];
@@ -219,9 +221,9 @@ function buildHTML(orgArray) {
  * @param {string} htmlString htmlString for the built site, from the buildHTML function.
  */
 function writeToFile(department, htmlString) {
-  const fs = require('fs');
   fs.writeFile(
-    `./dist/${department}_Org_Chart.html`,
+    path.join(__dirname, `dist/${department}_Org_Chart.html`),
+    // `./dist/${department}_Org_Chart.html`,
     htmlString,
     function (err) {
       err ? console.error(err) : console.log('Success!');
