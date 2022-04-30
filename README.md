@@ -31,11 +31,13 @@ After node has been installed, the repo should be cloned onto the user's local m
 
 To use the application, launch index.js from node and follow the prompts for the input. The generated HTML file will be saved in the dist folder under the filename "{departmentName}\_Org_Chart.html". This file may then be renamed and / or relocated to a desired directory.
 
+A demo of this application is uploaded to YouTube at the following link: [Org Chart Builder Demo](https://www.youtube.com/watch?v=xbOYocRNSnc). The html that was generated during the demo is in the /dist directory under the filename "My_Test_Department_Org_Chart.html".
+
 ---
 
 ## Tests
 
-This application uses the Jest testing framework.
+This application uses the Jest testing framework. To run the test scripts, jest must be loaded into your local project folder, and the test scripts can be run using the command line. `npm run test` in the command line will run the jest test scripts.
 
 ---
 
