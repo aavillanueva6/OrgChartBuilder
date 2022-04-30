@@ -211,8 +211,9 @@ function buildHTML(orgArray) {
   });
   htmlString += htmlSkeleton.bottomHtml();
 
+  const deptName = orgArray[0].department.split(' ').join('_');
   // calls the writeToFile function
-  writeToFile(orgArray[0].department, htmlString);
+  writeToFile(deptName, htmlString);
 }
 
 /**
